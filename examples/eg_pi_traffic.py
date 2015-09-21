@@ -3,23 +3,6 @@
 
 from recipes.pi_traffic import *
 
-# Should this be imported?
-red = Light('red')
-amber = Light('amber')
-green = Light('green')
-from time import sleep
-
-def log(n):
-    print(
-        '{n}: red is {red._state}, amber is {amber._state}, green is {green._state}'.format(
-            red=red,
-            amber=amber,
-            green=green,
-            n=n
-        ))
-
-
-#  Here is the essential lesson content.
 log(1)
 red.on()
 log(2)
@@ -39,7 +22,9 @@ if True:
     amber.off()
     red.on()
     log(7)
-    
+
+    test()
+
 
 
 
